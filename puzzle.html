@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" /> <!--para poder poner acentos-->
+		<link rel="stylesheet" type="text/css" href="puzzle_stylesheet.css" media="screen">
+        <script id="script" src="puzzle.js"></script>
+		<title>Puzzle</title>
+	</head>
+	<body onload="chooseImage()">
+
+        <!-- Ventana Modal -->
+        <div id="myModal" class="modal">
+             <!-- Contenido de la ventana -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 align="center">AVAILABLE PUZZLES</h2>
+              </div>
+              <div class="modal-body">
+                 <div align="center" id="gallery">
+                    <table class="menu">
+                        <tr>
+                            <td><img src="img1.png" alt="" width=125px height=75px onmouseover="this.style.borderColor='#2ECC71';" onmouseout="this.style.borderColor='black';"></img></td>
+                            <td><img src="img2.png" alt="" width=125px height=75px onmouseover="this.style.borderColor='#2ECC71';" onmouseout="this.style.borderColor='black';"></img></td>
+                            <td><img src="img3.png" alt="" width=125px height=75px onmouseover="this.style.borderColor='#2ECC71';" onmouseout="this.style.borderColor='black';"></img></td>
+                            <td><img src="img4.png" alt="" width=125px height=75px onmouseover="this.style.borderColor='#2ECC71';" onmouseout="this.style.borderColor='black';"></img></td>
+                            <td><img src="img5.png" alt="" width=125px height=75px onmouseover="this.style.borderColor='#2ECC71';" onmouseout="this.style.borderColor='black';"></img></td>
+                            <td><img src="img6.png" alt="" width=125px height=75px onmouseover="this.style.borderColor='#2ECC71';" onmouseout="this.style.borderColor='black';"></img></td>
+                        </tr>
+                     </table>
+                </div>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+        </div>
+             <div align="center">
+                 <button id="myBtn" class="boton naranja">Choose Your Puzzle</button>
+                 <table class="table" id="carousel">
+
+                    <tr>
+                        <marquee id="mov"> <!--quitar-->
+                        <td><img src="img1.png" alt="" width=250px height=150px class="dif"></img></td>
+                        <td><img src="img2.png" alt="" width=250px height=150px class="dif"></img></td>
+                        <td><img src="img3.png" alt="" width=250px height=150px class="dif"></img></td>
+                        </marquee>
+                    </tr>
+                 </table>
+        </div>
+        <div>
+
+            <h3 align="center" class="title">{PUZZLE}</h3>
+                <div>
+                       <div>
+                            <p class="info"> 20 minutes available to solve the puzzle. Hurry up!</p>
+                            <p id="timing"></p>
+                       </div>
+                        <img id="solve" src="white.png" alt="" width=250px height=200px></img>
+                     <table class="table" id="game" >
+                        <tr>
+                            <td><img id="pos1" src="white.png" alt="" width=150px height=100px onclick="change(this)" style="border:1px solid black" onmouseover="this.style.borderColor='orange';" onmouseout="this.style.borderColor='black';"></img></td>
+                            <td><img id="pos2" src="white.png" alt="" width=150px height=100px onclick="change(this)" style="border:1px solid black" onmouseover="this.style.borderColor='orange';" onmouseout="this.style.borderColor='black';"></img></td>
+                            <td><img id="pos3" src="white.png" alt="" width=150px height=100px onclick="change(this)" style="border:1px solid black" onmouseover="this.style.borderColor='orange';" onmouseout="this.style.borderColor='black';"></img></td>
+                        </tr>
+                        <tr>
+                            <td><img id="pos4" src="white.png" alt="" width=150px height=100px onclick="change(this)" style="border:1px solid black" onmouseover="this.style.borderColor='orange';" onmouseout="this.style.borderColor='black';"></img></td>
+                            <td><img id="pos5" src="white.png" alt="" width=150px height=100px onclick="change(this)" style="border:1px solid black" onmouseover="this.style.borderColor='orange';" onmouseout="this.style.borderColor='black';"></img></td>
+                            <td><img id="pos6" src="white.png" alt="" width=150px height=100px onclick="change(this)" style="border:1px solid black" onmouseover="this.style.borderColor='orange';" onmouseout="this.style.borderColor='black';"></img></td>
+                        </tr>
+                        <tr>
+                            <td><img id="pos7" src="white.png" alt="" width=150px height=100px onclick="change(this)" style="border:1px solid black" onmouseover="this.style.borderColor='orange';" onmouseout="this.style.borderColor='black';"></img></td>
+                            <td><img id="pos8" src="white.png" alt="" width=150px height=100px onclick="change(this)" style="border:1px solid black" onmouseover="this.style.borderColor='orange';" onmouseout="this.style.borderColor='black';"></img></td>
+                            <td><img id="pos9" src="white.png" alt="" width=150px height=100px onclick="change(this)" style="border:1px solid black" onmouseover="this.style.borderColor='orange';" onmouseout="this.style.borderColor='black';"></img></td>
+                        </tr>
+                     </table>
+
+            <div>
+        </div>
+    </body>
+</html>

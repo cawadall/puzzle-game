@@ -1,0 +1,156 @@
+@font-face
+{
+   font-family: "BB";
+   src: url("BB.eot");
+   src: url("BB.eot?#amocristalab") format("embedded-opentype"),
+        url("BB.woff") format("woff"),
+        url("BB.ttf") format("truetype"),
+        url("BB.svg#IDdelafuente") format("svg");
+}
+
+@font-face
+{
+   font-family: "dream";
+   src: url("dream.eot");
+   src: url("dream.eot?#amocristalab") format("embedded-opentype"),
+        url("dream.woff") format("woff"),
+        url("dream.ttf") format("truetype"),
+        url("dream.svg#IDdelafuente") format("svg");
+}
+
+body {background: url('back18.jpg');}
+td img {opacity: 1;
+        transition: opacity 2s ease-in-out;
+}
+
+#gallery{padding: 50px}
+#gallery img {border:2px solid black}
+#game {position:relative;
+       left:60px;
+       top:-100px
+}
+#timing {position:relative;
+         top:0px;
+         left:-280px;
+         font-family:"dream";
+         font-size:40px;
+
+}
+#solve {float:right;
+        position:relative;
+        left:-120px;
+        top:-20px;
+        border: #f6a504 20px solid;
+        border-style:ridge;
+        box-shadow: 10px 10px 15px #c55701;
+}
+
+.table {border-collapse: collapse;
+        border: #f6a504 20px solid;
+        background: gray;
+        border-style:ridge;
+        box-shadow: 10px 10px 15px #c55701;
+}
+.info {float:left;
+       position:relative;
+       left:50px;
+       top: -100px;
+       width: 400px;
+       font-family:"dream";
+       font-size:20px;
+}
+.title {font-family:"BB";
+        font-size:75px;
+        position:relative;
+        top: -40px;
+
+}
+.boton{text-align:center;
+       text-decoration: none;
+       font-family: 'Helvetica Neue', Helvetica, sans-serif;
+       display:inline-block;
+       color: #FFF;
+       background: #7F8C8D;
+       padding: 15px 30px;
+       white-space: nowrap;
+       -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+       border-radius: 5px;
+       margin: 10px 5px;
+       -webkit-transition: all 0.2s ease-in-out;
+       -ms-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+       transition: all 0.2s ease-in-out;
+}
+.naranja{background: #E67E22;}
+.naranja:hover{background: #D35400;}
+
+ /* Ventana Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 150%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+.modal-body {padding: 2px 16px; height: 200px}
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    height: 70px
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/*Animacion*/
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
